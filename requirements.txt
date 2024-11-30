@@ -8,3 +8,5 @@ torch==2.0.1
 tqdm==4.66.1
 
 communities
+networkx
+datetime
