@@ -1,3 +1,4 @@
+import numbers
 import numpy as np
 import scipy.sparse as sp
 import networkx as nx
@@ -130,3 +131,64 @@ def visualize_graph(G, pos, labels_dict=None, colors=None, node_size=100, edge_a
 
 	# Draw edges
 	nx.draw_networkx_edges(G, pos, width=1.0, alpha=edge_alpha)
+ 
+ 
+def check_random_state(seed):
+    """Turn seed into a np.random.RandomState instance.
+
+    Parameters
+    ----------
+    seed : None, int or instance of RandomState
+        If seed is None, return the RandomState singleton used by np.random.
+        If seed is an int, return a new RandomState instance seeded with seed.
+        If seed is already a RandomState instance, return it.
+        Otherwise raise ValueError.
+
+    Returns
+    -------
+    :class:`numpy:numpy.random.RandomState`
+        The random state object based on `seed` parameter.
+
+    Examples
+    --------
+    >>> from sklearn.utils.validation import check_random_state
+    >>> check_random_state(42)
+    RandomState(MT19937) at 0x...
+    """
+    if seed is None or seed is np.random:
+        return np.random.mtrand._rand
+    if isinstance(seed, numbers.Integral):
+        return np.random.RandomState(seed)
+    if isinstance(seed, np.random.RandomState):
+        return seed
+    raise ValueError(
+        "%r cannot be used to seed a numpy.random.RandomState instance" % seed
+    )
+
+def _init_arpack_v0(size, random_state):
+    """Initialize the starting vector for iteration in ARPACK functions.
+
+    Initialize a ndarray with values sampled from the uniform distribution on
+    [-1, 1]. This initialization model has been chosen to be consistent with
+    the ARPACK one as another initialization can lead to convergence issues.
+
+    Parameters
+    ----------
+    size : int
+        The size of the eigenvalue vector to be initialized.
+
+    random_state : int, RandomState instance or None, default=None
+        The seed of the pseudo random number generator used to generate a
+        uniform distribution. If int, random_state is the seed used by the
+        random number generator; If RandomState instance, random_state is the
+        random number generator; If None, the random number generator is the
+        RandomState instance used by `np.random`.
+
+    Returns
+    -------
+    v0 : ndarray of shape (size,)
+        The initialized vector.
+    """
+    random_state = check_random_state(random_state)
+    v0 = random_state.uniform(-1, 1, size)
+    return v0
