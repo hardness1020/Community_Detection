@@ -1,13 +1,12 @@
 # For CDNMF
-matplotlib
-networkx
-numpy
-scikit_learn
-scipy
-torch
-tqdm
+matplotlib==3.9.2
+networkx==3.4.2
+numpy==1.26.4
+scikit_learn==1.5.2
+scipy==1.14.1
+torch==2.0.1
+tqdm==4.66.1
 
-communities
-networkx
-datetime
-texttable
+communities==3.0.0
+networkx==3.4.2
+texttable==1.7.0
