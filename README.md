@@ -26,10 +26,10 @@
 
 ## 🧐 About <a name = "about"></a>
 
-This repository contains the final project for DSC210 - Numerical Linear Algebra. The objective of this project is to implement and evaluate various community detection algorithms, including:
+This repository contains the final project for DSC210 - Numerical Linear Algebra. The objective of this project is to implement and evaluate two different community detection algorithms on the Cora dataset. The two algorithms are:
 
-1. Spectral Clustering
-2. CDNMF: Contrastive Deep Nonnegative Matrix Factorization
+1. **Spectral Clustering**: Numerial linear algebra approach
+2. **CDNMF: Contrastive Deep Nonnegative Matrix Factorization**: Deep learning approach
 
 ## 📂 Datasets <a name="datasets"></a>
 
