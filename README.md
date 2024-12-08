@@ -46,6 +46,9 @@ The code is implemented in Python and designed to run in Jupyter Notebook and Co
 
 
 ## ✨ Experiment Results <a name="experiment_results"></a>
+
+The results might vary slightly due to the randomness of the algorithms. The following are the example results of the two algorithms on the Cora dataset.
+
 ### Metrics
 The valuation metrics including:
 - **Accuracy**: A ratio of the number of correctly classified samples to the total number of samples.
