@@ -38,9 +38,9 @@ be found in `dataset/cora`.
 
 ## 🎈 Usage <a name="usage"></a>
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/hardness1020/Community_Detection/blob/main/main.ipynb)
-Click the badge above to run the code in Colab!
-**Remember to use the GPU runtime for faster computation.**
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/hardness1020/Community_Detection/blob/main/main.ipynb)  
+
+Click the badge above to run the code in Colab!  **Remember to use the GPU runtime for faster computation.**
 
 The code is implemented in Python and designed to run in Jupyter Notebook and Colab. You can find the code in the main.ipynb file. It is modular and structured, allowing you to execute it step-by-step by running the cells in the notebook.
 
