@@ -8,7 +8,7 @@
 
 ---
 
-<p align="center"> The final project of DSC210 - Numerical Linear Algebra
+<p align="center"> Final project of DSC210 - Numerical Linear Algebra (2024 FALL)
     <br> 
 </p>
 
@@ -24,7 +24,7 @@
 
 ## 🧐 About <a name = "about"></a>
 
-This project is the final project of DSC210 - Numerical Linear Algebra. The goal of this project is to implement and compare different community detection algorithms. The algorithms implemented in this project are:
+This repository contains the final project for DSC210 - Numerical Linear Algebra. The objective of this project is to implement and evaluate various community detection algorithms, including:
 
 1. Spectral Clustering
 2. CDNMF: Contrastive Deep Nonnegative Matrix Factorization
@@ -35,7 +35,7 @@ To install the dependencies, please follow the colab instruction to use: `%pip i
 
 ## 📂 Datasets <a name="datasets"></a>
 
-The code takes input graphs in csv and txt files. Sample graphs for the Cora could also be found in the repository: 'dataset/cora'.
+The code takes input graphs in csv and txt files. Sample graphs for the Cora could also be found in the repository: `dataset/cora`.
 
 ## 🎈 Usage <a name="usage"></a>
 
@@ -67,12 +67,12 @@ Feel free to explore and analyze how the predicted communities align with the gr
 - [CDNMF](https://github.com/6lyc/CDNMF?tab=readme-ov-file) - Method for Community Detection -->
 
 
-## ✍️ Authors <a name = "authors"></a>
-
+## ✍️ Authors <a name="authors"></a>
 - [@hardness1020](https://github.com/hardness1020) - Marcus Chang
 - [@ripple-space](https://github.com/ripple-space) - Yi Lien
 - [@Jeanhsu0707](https://github.com/Jeanhsu0707) - Hua Jin Hsu
 - [@TingShiuanLai](https://github.com/TingShiuanLai) - Ting-Shiuan, Lai
+
 <!-- 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 
